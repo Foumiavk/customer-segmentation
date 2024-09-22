@@ -3,6 +3,7 @@ from sklearn.model_selection import GridSearchCV
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
 
 # KMeans model with optional hyperparameter tuning
 def build_kmeans_model(df, n_clusters=3):
