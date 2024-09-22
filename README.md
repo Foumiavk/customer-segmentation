@@ -44,21 +44,17 @@ To tune the hyperparameters (e.g., number of neurons, learning rate, dropout rat
 
 - 64 neurons in the first and third layers and 128 neurons in the second layer provide a balanced amount of complexity.
 
-## RESULTS
-The model achieved following results:
-- Test Accuracy: 85.86% when KMeans is used for Clustering
-- Test Accuracy: 88.10% on Deep learning
-- Test Accuracy: 85.86% on model with Keras Tuner
+## Usage
 
-However, this high accuracy raises concerns about overfitting, suggesting the model may not generalize well to new, unseen data. The perfect accuracy likely reflects the simplicity and limited variability of the dataset, making it easy for the model to overfit.
+Clone the repository
+cd customer-segmentation
+You can install the libraries using: pip install -r requirements.txt
 
-Key learnings:
-- The dataset is too small and imbalanced to provide robust generalization.
-- Although the model performs well on the given dataset, it may fail when exposed to more complex or varied data.
-- Future improvements should include using a larger, more diverse dataset and potentially a more complex architecture to avoid overfitting.
+Preprocess the data: Clean and preprocess the dataset using the functions provided in preprocessing.py.
 
-## CONCLUSIONS
-While the model performs perfectly on the current data, overfitting is a major concern due to the small, imbalanced dataset. This highlights the need for better data and more robust architectures for real-world applications. Future work should focus on improving the model's generalizability by introducing more varied data and refining the architecture.
+Deep learning model: You can train and evaluate the deep learning model using the provided Jupyter notebook customer_segmentation_main.ipynb. And hyperparameter tuning for the deep learning model. Also added the k means to compare the performance with deep learning model.
+
+There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_data.ipynb to know your data more.
 
 ## ACTIONABLE INSIGHTS
 - Data Collection: Acquire a more diverse dataset.
@@ -71,14 +67,18 @@ While the model performs perfectly on the current data, overfitting is a major c
 
 - The deep learning architecture is harder to interpret than simpler models. For example, it's difficult to understand the exact contribution of features like Income or Age to the final classification, which is often referred to as the black-box nature of deep learning models. This trade-off is common in deep learning: accuracy often comes at the cost of interpretability.
 
-## Usage
+## RESULTS
+The model achieved following results:
+- Test Accuracy: 85.86% when KMeans is used for Clustering
+- Test Accuracy: 85.86% on Deep learning but saw 88.54% in some readings.
+- Test Accuracy: 85.86% on model with Keras Tuner
 
-Clone the repository
-cd customer-segmentation
-You can install the libraries using: pip install -r requirements.txt
+However, this high accuracy raises concerns about overfitting, suggesting the model may not generalize well to new, unseen data. The perfect accuracy likely reflects the simplicity and limited variability of the dataset, making it easy for the model to overfit.
 
-Preprocess the data: Clean and preprocess the dataset using the functions provided in preprocessing.py.
+Key learnings:
+- The dataset is too small and imbalanced to provide robust generalization.
+- Although the model performs well on the given dataset, it may fail when exposed to more complex or varied data.
+- Future improvements should include using a larger, more diverse dataset and potentially a more complex architecture to avoid overfitting.
 
-Deep learning model: You can train and evaluate the deep learning model using the provided Jupyter notebook customer_segmentation_main.ipynb. And hyperparameter tuning for the deep learning model. Also added the k means to compare the performance with deep learning model.
-
-There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_data.ipynb to know your data more.
+## CONCLUSIONS
+While the model performs perfectly on the current data, overfitting is a major concern due to the small, imbalanced dataset. This highlights the need for better data and more robust architectures for real-world applications. Future work should focus on improving the model's generalizability by introducing more varied data and refining the architecture.

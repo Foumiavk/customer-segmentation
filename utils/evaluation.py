@@ -20,10 +20,13 @@ def plot_clusters(X, labels):
     plt.ylabel("Feature 2")
     plt.show()
 
-def plot_confusion_matrix(y_true, y_pred ):
+def plot_confusion_matrix(y_true, y_pred, title ):
     cm = confusion_matrix(y_true, y_pred )
+
+    # Plot the confusion matrix
+    plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
-    plt.title("K-Means Confusion Matrix")
+    plt.title(title)
     plt.ylabel('Actual Label')
     plt.xlabel('Predicted Label')
     plt.show()

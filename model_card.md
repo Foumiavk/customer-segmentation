@@ -37,7 +37,7 @@ Loss: Sparse Categorical Cross-Entropy, suitable for multi-class classification 
 
 The model achieved following results:
 - Test Accuracy: 85.86% when KMeans is used for Clustering
-- Test Accuracy: 88.10% on Deep learning
+- Test Accuracy: 85.86% on Deep learning but saw 88.54% in some readings.
 - Test Accuracy: 85.86% on model with Keras Tuner
 
 - Confusion Matrix: Shows that most customers are correctly classified into their respective tiers.
