@@ -86,3 +86,4 @@ Key learnings:
 ## CONCLUSIONS
 
 While the model performs perfectly on the current data, overfitting is a major concern due to the small, imbalanced dataset. This highlights the need for better data and more robust architectures for real-world applications. Future work should focus on improving the model's generalizability by introducing more varied data and refining the architecture.
+
