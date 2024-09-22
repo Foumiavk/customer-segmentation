@@ -34,6 +34,7 @@ Output Layer: 3 neurons (softmax activation) for multi-class classification (Tie
 The model is optimized using the Adam optimizer and trained with the sparse categorical cross-entropy loss function.
 
 ## HYPERPARAMETER OPTIMZATION
+
 To tune the hyperparameters (e.g., number of neurons, learning rate, dropout rate), used Keras Tuner as implemented in model.py
 
 - The learning rate is set to 0.001 (default in Adam). This provides a good balance between convergence speed and model stability. A lower learning rate might slow down training but could lead to better long-term performance.
@@ -57,6 +58,7 @@ Deep learning model: You can train and evaluate the deep learning model using th
 There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_data.ipynb to know your data more.
 
 ## ACTIONABLE INSIGHTS
+
 - Data Collection: Acquire a more diverse dataset.
 
 - Model Development: Experiment with more complex architectures to improve generalization and prevent overfitting.
@@ -68,6 +70,7 @@ There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_
 - The deep learning architecture is harder to interpret than simpler models. For example, it's difficult to understand the exact contribution of features like Income or Age to the final classification, which is often referred to as the black-box nature of deep learning models. This trade-off is common in deep learning: accuracy often comes at the cost of interpretability.
 
 ## RESULTS
+
 The model achieved following results:
 - Test Accuracy: 85.86% when KMeans is used for Clustering
 - Test Accuracy: 85.86% on Deep learning but saw 88.54% in some readings.
@@ -81,4 +84,5 @@ Key learnings:
 - Future improvements should include using a larger, more diverse dataset and potentially a more complex architecture to avoid overfitting.
 
 ## CONCLUSIONS
+
 While the model performs perfectly on the current data, overfitting is a major concern due to the small, imbalanced dataset. This highlights the need for better data and more robust architectures for real-world applications. Future work should focus on improving the model's generalizability by introducing more varied data and refining the architecture.
