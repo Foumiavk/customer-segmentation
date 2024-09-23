@@ -13,12 +13,12 @@ Key steps:
 - Use hyperparameter tuning to optimize the model’s performance.
 - Evaluate the model using metrics like accuracy, confusion matrix, and classification report.
 
-## DATA
+## Data
 
 The dataset contains customer demographics, purchasing behaviors, and responses to previous marketing campaigns.
 You can find a similar dataset on Kaggle / use the Marketing Campaign Dataset.
 
-## MODEL 
+## Model 
 
 The deep learning model is a fully connected feedforward neural network with the following architecture:
 
@@ -33,7 +33,7 @@ Output Layer: 3 neurons (softmax activation) for multi-class classification (Tie
 
 The model is optimized using the Adam optimizer and trained with the sparse categorical cross-entropy loss function.
 
-## HYPERPARAMETER OPTIMZATION
+## Hyperparameter Optimisation
 
 To tune the hyperparameters (e.g., number of neurons, learning rate, dropout rate), used Keras Tuner as implemented in model.py
 
@@ -57,7 +57,7 @@ Deep learning model: You can train and evaluate the deep learning model using th
 
 There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_data.ipynb to know your data more.
 
-## ACTIONABLE INSIGHTS
+## Actionable Insights
 
 - Data Collection: Acquire a more diverse dataset.
 
@@ -69,7 +69,7 @@ There is a Jupyter notebook - jupyter_notebooks/customer_segmentation_know_your_
 
 - The deep learning architecture is harder to interpret than simpler models. For example, it's difficult to understand the exact contribution of features like Income or Age to the final classification, which is often referred to as the black-box nature of deep learning models. This trade-off is common in deep learning: accuracy often comes at the cost of interpretability.
 
-## RESULTS
+## Results
 
 The model achieved following results:
 - Test Accuracy: 85.86% when KMeans is used for Clustering
@@ -83,7 +83,6 @@ Key learnings:
 - Although the model performs well on the given dataset, it may fail when exposed to more complex or varied data.
 - Future improvements should include using a larger, more diverse dataset and potentially a more complex architecture to avoid overfitting.
 
-## CONCLUSIONS
+## Conclusions
 
 While the model performs perfectly on the current data, overfitting is a major concern due to the small, imbalanced dataset. This highlights the need for better data and more robust architectures for real-world applications. Future work should focus on improving the model's generalizability by introducing more varied data and refining the architecture.
-
